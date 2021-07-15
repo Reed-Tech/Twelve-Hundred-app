@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Notifications_Activity">
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="?attr/actionBarSize"
+        android:id="@+id/not_rv"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="You currently have no notifications"
+        android:gravity="center"
+        android:fontFamily="@font/poppins_light"
+        android:id="@+id/ychn_text"
+        android:visibility="gone"/>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@drawable/cus_btmnavbar"
+        android:id="@+id/not_btmnavbar"
+        android:layout_alignParentBottom="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Clear All"
+            android:layout_gravity="center"
+            android:textColor="#ffffff"
+            android:fontFamily="@font/poppins_bold"
+            android:drawableTop="@drawable/removeitem"/>
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+</RelativeLayout>

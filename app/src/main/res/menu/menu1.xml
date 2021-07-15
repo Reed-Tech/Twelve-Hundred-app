@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<group android:checkableBehavior="single">
+    <item
+        android:id="@+id/toolbarcart"
+        android:icon="@drawable/toolbarcart"
+        android:title="Cart"
+        android:actionLayout="@layout/badge_layout"
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/toolbarsearch"
+        android:icon="@drawable/toolbarsearch_ic"
+        android:title="Search"
+        app:showAsAction="always"
+        />
+
+ </group>
+</menu>

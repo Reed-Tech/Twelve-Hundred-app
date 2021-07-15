@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "842065058328",
+    "firebase_url": "https://twelve-hundred.firebaseio.com",
+    "project_id": "twelve-hundred",
+    "storage_bucket": "twelve-hundred.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:842065058328:android:bb936299c29cf9a37ac16d",
+        "android_client_info": {
+          "package_name": "com.example.twelve"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "842065058328-m8r63r4msvjlb2vcd37m1an5g7qt64rm.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.twelve",
+            "certificate_hash": "c8cf917a523feec11c6506f2c83fae35fa7f1061"
+          }
+        },
+        {
+          "client_id": "842065058328-eb2jdut5i09iu5qfdk9gs5s11a3tcngu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB_1TGVSIrB59BDUwLlnwKs8ZQgP9JRkow"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "842065058328-eb2jdut5i09iu5qfdk9gs5s11a3tcngu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

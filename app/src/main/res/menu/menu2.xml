@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/toolbarcart"
+            android:icon="@drawable/toolbarcart"
+            android:title="Cart"
+            android:actionLayout="@layout/badge_layout"
+            app:showAsAction="always"/>
+
+        <item
+            android:id="@+id/toolbar_not"
+            android:icon="@drawable/toolbar_not"
+            android:actionLayout="@layout/not_badgelayout"
+            android:title="Notifications"
+            app:showAsAction="always"
+            />
+
+
+
+
+    </group>
+</menu>

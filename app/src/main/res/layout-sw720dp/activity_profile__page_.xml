@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:fitsSystemWindows="true"
+    android:layout_height="match_parent"
+    tools:context=".Profile_Page_Activity">
+
+    <LinearLayout
+        android:id="@+id/profile_image2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="70dp"
+        android:orientation="vertical">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/civ"
+            android:src="@drawable/profileicon"
+            app:civ_border_color="#000"
+            app:civ_border_width="5dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Update display picture"
+            android:textSize="12dp"
+            android:fontFamily="@font/poppins_light"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="8dp"
+            android:textColor="#00BCD4"/>
+    </LinearLayout>
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/profile_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:layout_scrollFlags="scroll|enterAlways"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:hint="Full Name"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_marginHorizontal="10dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:paddingLeft="10dp"
+                    android:fontFamily="@font/poppins_light"
+                    android:id="@+id/profile_fullname"
+                    android:textSize="12dp"
+                    android:inputType="textPersonName"
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Username"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_marginTop="15dp"
+                android:layout_marginHorizontal="10dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:fontFamily="@font/poppins_light"
+                    android:paddingLeft="10dp"
+                    android:id="@+id/profile_username"
+                    android:textSize="12dp"
+                    android:inputType="textPersonName"
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:hint="E-Mail"
+                android:layout_marginTop="15dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/profile_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:inputType="none"
+                    android:textIsSelectable="true"
+                    android:longClickable="false"
+                    android:focusable="false"
+                    android:fontFamily="@font/poppins_light"
+                    android:paddingLeft="10dp"
+                    android:textSize="12dp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:hint="Delievery Phone Number"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                app:prefixText="+234 "
+                app:prefixTextAppearance="?attr/textAppearanceSubtitle1"
+                app:prefixTextColor="#000"
+                android:layout_marginHorizontal="10dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:fontFamily="@font/poppins_light"
+                    android:paddingLeft="10dp"
+                    android:id="@+id/delievery_no"
+                    android:textSize="12dp"
+                    android:inputType="phone"
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:hint="Delievery Address"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_marginHorizontal="10dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="65dp"
+                    android:fontFamily="@font/poppins_light"
+                    android:paddingLeft="10dp"
+                    android:id="@+id/delievery_address"
+                    android:textSize="12dp"
+                    android:inputType="textMultiLine"
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginTop="15dp"
+                android:layout_weight="2"
+                android:orientation="horizontal">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="180dp"
+                    android:id="@+id/town_et"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:hint="Town"
+                    app:boxStrokeColor="#000">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:fontFamily="@font/poppins_light"
+                        android:id="@+id/town2"
+                        android:paddingLeft="8dp"
+                        android:textSize="12dp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <Spinner
+                    android:id="@+id/state_spinner2"
+                    android:layout_width="150dp"
+                    android:layout_marginTop="-1dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="5dp"
+                    android:background="@drawable/spinner_item" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/poppins_light"
+                android:text="*Please provide address in the format of (house no, street name, Landmarks and Area.). Your order can only be valid if address is comprehensive."
+                android:textColor="#000"
+                android:textSize="8dp"
+                android:textStyle="italic" />
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <Button
+        android:id="@+id/profile_submit_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/pay_out_btn"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Submit"
+        android:textAllCaps="false"
+        android:textColor="#fff"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

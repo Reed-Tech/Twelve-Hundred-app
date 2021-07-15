@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="350dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/star_1"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_baseline_star_border2_24" />
+
+            <ImageView
+                android:id="@+id/star_2"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_baseline_star_border2_24" />
+
+            <ImageView
+                android:id="@+id/star_3"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_baseline_star_border2_24" />
+
+            <ImageView
+                android:id="@+id/star_4"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_baseline_star_border2_24" />
+
+            <ImageView
+                android:id="@+id/star_5"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_baseline_star_border2_24" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/numstars"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_marginHorizontal="10dp"
+            android:fontFamily="@font/poppins_bold"
+            android:textColor="#000"
+            android:visibility="gone"
+            android:text="5 stars"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_marginHorizontal="10dp"
+            android:fontFamily="@font/poppins_light"
+            android:id="@+id/sas_text"
+            android:textColor="#000"
+            android:text="Please select a star according to your review of the product"/>
+
+        <TextView
+            android:id="@+id/next_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_marginHorizontal="10dp"
+            android:visibility="gone"
+            android:fontFamily="@font/poppins_bold"
+            android:textSize="18dp"
+            android:layout_marginTop="10dp"
+            android:textColor="#000"
+            android:text="Next"
+            android:drawableRight="@drawable/next_nav_black"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:text="Close"
+        android:id="@+id/close_man"
+        android:layout_marginBottom="5dp"
+        android:drawablePadding="5dp"
+        android:drawableLeft="@drawable/dia_close"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/segoeui"
+        android:textSize="12dp"
+        android:layout_alignParentBottom="true"
+        />
+
+</RelativeLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:padding="15dp"
+    android:textColor="#000"
+    android:textSize="13dp"
+    android:text="Holland"
+    android:background="@drawable/productdesc"
+    android:drawableRight="@drawable/drop_down"
+    android:layout_marginTop="40dp"
+    android:fontFamily="@font/poppins_light"
+    android:layout_height="wrap_content">
+
+</TextView>

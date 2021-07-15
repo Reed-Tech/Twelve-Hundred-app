@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        app:cardCornerRadius="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:id="@+id/pimg"
+                android:src="@drawable/profileicon"
+                app:civ_border_width="1dp"
+                app:civ_border_color="#000"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginHorizontal="20dp"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:id="@+id/userfullname"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="User fullname"
+                        android:textColor="#000000"
+                        android:layout_weight="1.5"
+                        android:fontFamily="@font/poppins_bold"/>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_weight="0">
+
+                        <ImageView
+                            android:layout_width="12dp"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_baseline_starfill_24"
+                            android:id="@+id/star_1"/>
+                        <ImageView
+                            android:layout_width="12dp"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_baseline_starfill_24"
+                            android:id="@+id/star_2"/>
+                        <ImageView
+                            android:layout_width="12dp"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_baseline_starfill_24"
+                            android:id="@+id/star_3"/>
+                        <ImageView
+                            android:layout_width="12dp"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_baseline_starfill_24"
+                            android:id="@+id/star_4"
+                            />
+                        <ImageView
+                            android:layout_width="12dp"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_baseline_starfill_24"
+                            android:id="@+id/star_5"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="20dp"
+                    android:layout_marginTop="-7dp"
+                    android:id="@+id/username"
+                    android:text="User's username"
+                    android:textSize="8dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/rev_body"
+                    android:textSize="10dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginHorizontal="20dp"
+                    android:fontFamily="@font/poppins_light"
+                    android:textColor="#000000"
+                    android:text="Lorem Ipsum: This is the body of the review of each product displayed"/>
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

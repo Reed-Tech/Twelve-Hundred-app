@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context="com.example.twelve.RegisterActivity">
+
+
+    <TextView
+        android:id="@+id/text_headr"
+        android:layout_width="178dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="12dp"
+        android:fontFamily="@font/bangers_regular"
+        android:gravity="center"
+        android:text="12:00"
+        android:textColor="#000000"
+        android:textSize="80dp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text_headr">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/signup"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/poppins_bold"
+                    android:text="Vendor sign up"
+                    android:textColor="#000000"
+                    android:textSize="30dp"
+                    android:textStyle="bold" />
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_marginTop="20dp"
+                    android:hint="Business Name">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/storename"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:fontFamily="@font/poppins_light"
+                        android:inputType="textPersonName"
+                        android:paddingLeft="10dp"
+                        android:textSize="12dp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_marginTop="20dp"
+                    android:hint="Business e-mail">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/storeemail"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:fontFamily="@font/poppins_light"
+                        android:inputType="textEmailAddress"
+                        android:paddingLeft="10dp"
+                        android:textSize="12dp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_marginTop="20dp"
+                    android:hint="Business Phone"
+                    app:prefixText="+234 "
+                    app:prefixTextAppearance="@font/segoeui"
+                    app:prefixTextColor="#000">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/storephone"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:fontFamily="@font/poppins_light"
+                        android:inputType="phone"
+                        android:paddingLeft="10dp"
+                        android:textSize="12dp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="10dp"
+                    android:hint="Password"
+                    app:passwordToggleEnabled="true">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/storepassword"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:fontFamily="@font/poppins_light"
+                        android:inputType="textPassword"
+                        android:paddingLeft="10dp"
+                        android:textSize="12dp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <TextView
+                    android:id="@+id/pfal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/poppins_light"
+                    android:text="Please fill out all fields"
+                    android:textColor="#FD0000"
+                    android:textSize="10dp"
+                    android:visibility="gone" />
+
+                <Button
+                    android:id="@+id/storesubmit_btn"
+                    android:layout_width="150dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/login_bck"
+                    android:fontFamily="@font/poppins_bold"
+                    android:gravity="center"
+                    android:text="Sign up"
+                    android:textAllCaps="false"
+                    android:textColor="#ffffff"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/Storelogin_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="@font/poppins_light"
+        android:text="Already signed up? Log in"
+        android:textColor="#000"
+        android:textSize="10dp" />
+
+    <ProgressBar
+        android:id="@+id/Ssignup_progressbar"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/round"
+        android:visibility="invisible" />
+
+</RelativeLayout>

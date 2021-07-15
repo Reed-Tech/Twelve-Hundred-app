@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#FFFFFF"
+    android:layout_height="match_parent"
+    tools:context="com.example.twelve.RegisterActivity">
+
+
+
+    <TextView
+        android:layout_width="175dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:id="@+id/text_head"
+        android:fontFamily="@font/bangers_regular"
+        android:text="12:00"
+        android:textColor="#000000"
+        android:textSize="80dp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/signup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Vendor Log In"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:fontFamily="@font/poppins_bold"
+            android:textColor="#000000"
+            />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Store mail"
+            app:boxStrokeColor="#000"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginTop="30dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/login_storeemail"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:fontFamily="@font/segoeui"
+                android:inputType="textEmailAddress"
+                android:paddingLeft="10dp"
+                android:textSize="12dp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            app:passwordToggleEnabled="true"
+            android:layout_height="wrap_content"
+            android:hint="Store password"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            app:boxStrokeColor="#000"
+
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_width="match_parent">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:id="@+id/login_storepassword"
+                android:fontFamily="@font/segoeui"
+                android:layout_height="50dp"
+                android:paddingLeft="10dp"
+                android:inputType="textPassword"
+                android:textSize="12dp"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:id="@+id/pfal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_light"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:text="Please fill out all fields"
+            android:textColor="#FD0000"
+            android:textSize="10dp"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/login_btn"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/login_bck"
+            android:layout_marginTop="15dp"
+            android:text="Log In"
+            android:textColor="#ffffff"
+            android:fontFamily="@font/poppins_bold"
+            android:textAllCaps="false"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="@font/poppins_light"
+        android:text="Don't have an account? Sign up"
+        android:textSize="10dp"
+        android:textColor="#000"
+        android:id="@+id/Storesignup_logintext"/>
+
+    <ProgressBar
+        android:id="@+id/Login_progressbar"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/round"
+        android:visibility="invisible"
+        />
+
+</RelativeLayout>

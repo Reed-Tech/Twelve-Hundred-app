@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".newProduct">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/newp_rv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/productimage"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_marginTop="10dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/defproductimg" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-40dp"
+            android:fontFamily="@font/poppins_light"
+            android:gravity="center_horizontal"
+            android:text="Upload product images"
+            android:textColor="#03A9F4"
+            android:textSize="12dp" />
+    </LinearLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="20dp"
+                android:hint="Product Name">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/productnametxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:fontFamily="@font/poppins_light"
+                    android:inputType="textPersonName"
+                    android:paddingLeft="10dp"
+                    android:textColor="#000000"
+                    android:textSize="12dp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="15dp"
+                android:hint="Product Description">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/productdesctxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:fontFamily="@font/poppins_light"
+                    android:inputType="textMultiLine"
+                    android:paddingLeft="10dp"
+                    android:textColor="#000000"
+                    android:textSize="12dp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="15dp"
+                android:hint="Poduct Price"
+                app:prefixText="NGN "
+                app:prefixTextAppearance="@font/segoeui"
+                app:prefixTextColor="#000">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/productpricetxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:fontFamily="@font/poppins_light"
+                    android:paddingLeft="10dp"
+                    android:textColor="#000000"
+                    android:textSize="12dp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="10dp"
+                android:hint="Colours available">
+
+                <MultiAutoCompleteTextView
+                    android:id="@+id/col_mactv1"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:fontFamily="@font/poppins_light"
+                    android:padding="15dp"
+                    android:textColor="#000000"
+                    android:textSize="12dp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="10dp"
+                android:hint="Sizes available">
+
+                <MultiAutoCompleteTextView
+                    android:id="@+id/size_mactv1"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:fontFamily="@font/poppins_light"
+                    android:padding="15dp"
+                    android:textColor="#000000"
+                    android:textSize="12dp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="10dp"
+                android:hint="Designs available">
+
+                <MultiAutoCompleteTextView
+                    android:id="@+id/design_mactv1"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:fontFamily="@font/poppins_light"
+                    android:padding="15dp"
+                    android:textColor="#000000"
+                    android:textSize="12dp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/usc_text1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="10dp"
+                    android:text="Update size chart"
+                    android:textColor="#9CEAED"
+                    android:textSize="10dp" />
+
+                <TextView
+                    android:id="@+id/fpn_text1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="10dp"
+                    android:text="Filepath name"
+                    android:textColor="#817F7F"
+                    android:textSize="15dp"
+                    android:visibility="invisible" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/upip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="Uploading in progress, please wait"
+                android:textSize="15dp"
+                android:visibility="invisible" />
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <Button
+        android:id="@+id/addproductbtn"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginHorizontal="25dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/pay_out_btn"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Add Product"
+        android:textColor="#ffffff"
+        android:textStyle="bold" />
+
+    <ProgressBar
+        android:id="@+id/progressbarr"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_centerInParent="true"
+        android:visibility="invisible" />
+
+</RelativeLayout>

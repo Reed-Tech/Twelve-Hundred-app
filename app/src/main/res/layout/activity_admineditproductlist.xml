@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Admineditproductlist">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/nextrv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+         />
+
+    <TextView
+        android:id="@+id/nitd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/segoeui"
+        android:gravity="center"
+        android:layout_centerInParent="true"
+        android:text="No Items to display yet"
+        android:textColor="#000000"
+        android:visibility="gone"
+        android:textStyle="bold" />
+
+
+</RelativeLayout>

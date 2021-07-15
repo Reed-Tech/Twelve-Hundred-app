@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="195dp"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="10dp"
+    android:layout_marginTop="8dp"
+    android:layout_marginBottom="5dp"
+    >
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/mycardview"
+        android:layout_width="195dp"
+        android:layout_height="280dp"
+        app:cardCornerRadius="10dp">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#ececec"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/rec_imgview"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/men_track"
+                app:shapeAppearanceOverlay="@style/cus_img" />
+
+
+            <TextView
+                android:id="@+id/rec_textviewname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/poppins_semibold"
+                android:text="Product Name"
+                android:textColor="#000000"
+                android:textSize="13dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/rec_textviewcategory"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:fontFamily="@font/poppins_medium"
+                android:text="category name"
+                android:textSize="7dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="5dp"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="5dp"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/star_1"
+                    android:layout_width="12dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_baseline_starfill_24" />
+
+                <ImageView
+                    android:id="@+id/star_2"
+                    android:layout_width="12dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_baseline_starfill_24" />
+
+                <ImageView
+                    android:id="@+id/star_3"
+                    android:layout_width="12dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_baseline_starfill_24" />
+
+                <ImageView
+                    android:id="@+id/star_4"
+                    android:layout_width="12dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_baseline_starfill_24" />
+
+                <ImageView
+                    android:id="@+id/star_5"
+                    android:layout_width="12dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_baseline_starfill_24" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/rec_textprice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="2"
+                android:fontFamily="@font/poppins_semibold"
+                android:gravity="end"
+                android:text="Price"
+                android:textColor="#000000"
+                android:textSize="12dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

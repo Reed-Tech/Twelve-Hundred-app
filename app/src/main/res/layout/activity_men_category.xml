@@ -1,0 +1,559 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".menCategory">
+
+    <androidx.appcompat.widget.Toolbar
+                android:id="@+id/myytoolbar3"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="#000000"
+                android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+            </androidx.appcompat.widget.Toolbar>
+
+    <TextView
+                android:layout_width="77dp"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="1dp"
+                android:fontFamily="@font/bangers_regular"
+                android:text="12:00"
+                android:textColor="#ffffff"
+                android:textSize="36dp" />
+
+    <TextView
+                android:id="@+id/anptext2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/myytoolbar3"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/segoeui"
+                android:text="Add New Product"
+                android:textColor="#000000"
+                android:textSize="40dp"
+                android:textStyle="bold" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/anptext2">
+
+        <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/anptext2">
+
+        <TextView
+            android:id="@+id/clothingtxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/segoeui"
+            android:text="Clothing"
+            android:textColor="#000"
+            android:textSize="30dp" />
+
+        <LinearLayout
+            android:id="@+id/ll1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/clothingtxt"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/maccesories"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/accesories" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="fill_horizontal"
+                    android:text="Accessories"
+                    android:textColor="#000"
+                    android:textSize="12dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/mactivewear"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/ic_activewear" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="fill_horizontal"
+                    android:text="Activewear"
+                    android:textColor="#000"
+                    android:textSize="12dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/mcoords"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/clothes" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="fill_horizontal"
+                    android:text="Co-ords"
+                    android:textColor="#000"
+                    android:textSize="12dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/msweatshirts"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/sweats" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="fill_horizontal"
+                    android:text="Sweatshirts"
+                    android:textColor="#000"
+                    android:textSize="12dp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ll1"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/mjackets"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/jackets" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="fill_horizontal"
+                    android:text="Jackets"
+                    android:textColor="#000"
+                    android:textSize="12dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/mjeans"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/jeans" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="fill_horizontal"
+                    android:text="Jeans"
+                    android:textColor="#000"
+                    android:textSize="12dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/mjoggers"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/joggers" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="fill_horizontal"
+                    android:text="Joggers"
+                    android:textColor="#000"
+                    android:textSize="12dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/msleepwear"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/pyjamas" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="fill_horizontal"
+                    android:text="Sleepwear"
+                    android:textColor="#000"
+                    android:textSize="12dp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ll2"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <LinearLayout
+                android:id="@+id/menlin9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/mmultipacks"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/clothes" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="fill_horizontal"
+                    android:text="Nativewear"
+                    android:textColor="#000"
+                    android:textSize="12dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/menlin10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/mshorts"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/shorts" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="fill_horizontal"
+                    android:text="Shorts"
+                    android:textColor="#000"
+                    android:textSize="12dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/menlin11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/mshirts"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/shirts" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="fill_horizontal"
+                    android:text="Shirts"
+                    android:textColor="#000"
+                    android:textSize="12dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/menlin12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/mtshirts"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/polo" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="fill_horizontal"
+                    android:text="T-shirts/Polo"
+                    android:textColor="#000"
+                    android:textSize="12dp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ll3"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/msuits"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/suits" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="fill_horizontal"
+                    android:text="Suits"
+                    android:textColor="#000"
+                    android:textSize="12dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/munderwear"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/underwear" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="fill_horizontal"
+                    android:text="Underwear"
+                    android:textColor="#000"
+                    android:textSize="12dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/mtracksuit"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/track" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="fill_horizontal"
+                    android:text="Tracksuits"
+                    android:textColor="#000"
+                    android:textSize="12dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/mchinos"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/chinos" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="fill_horizontal"
+                    android:text="Pants/Chinos"
+                    android:textColor="#000"
+                    android:textSize="12dp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/shoestxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ll4"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/segoeui"
+            android:text="Shoes"
+            android:textColor="#000"
+            android:textSize="30dp" />
+
+        <LinearLayout
+            android:id="@+id/ll5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/shoestxt"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/mboots"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/boots" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="fill_horizontal"
+                    android:text="Boots"
+                    android:textColor="#000"
+                    android:textSize="12dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/mleathers"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/shoe" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="fill_horizontal"
+                    android:text="Leathers"
+                    android:textColor="#000"
+                    android:textSize="12dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/mslides"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/slides" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="fill_horizontal"
+                    android:text="Slides"
+                    android:textColor="#000"
+                    android:textSize="12dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/msneakers"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/sneakers" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="fill_horizontal"
+                    android:text="Sneakers"
+                    android:textColor="#000"
+                    android:textSize="12dp" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>
+

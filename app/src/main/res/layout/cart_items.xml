@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginHorizontal="8dp"
+    android:layout_marginTop="8dp"
+    android:layout_marginBottom="10dp"
+    app:cardCornerRadius="15dp">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_margin="5dp"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/ic_remove"
+            android:id="@+id/remove_item_ic"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/cart_pimage"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/men_track"
+            app:shapeAppearanceOverlay="@style/cus_img2" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="8dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="40dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Product name"
+                android:textSize="16dp"
+                android:layout_marginBottom="20dp"
+                android:id="@+id/cart_pname"
+                android:layout_marginRight="30dp"
+                android:textStyle="bold"
+                android:fontFamily="@font/poppins_light"
+                android:textColor="#000"/>
+
+            <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ordered date"
+            android:drawableLeft="@drawable/date_ic"
+            android:textSize="10dp"
+            android:id="@+id/cart_pdate"
+            android:fontFamily="@font/poppins_light"
+            android:textColor="#000000"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Quantity"
+
+                android:textSize="10dp"
+
+                android:drawableLeft="@drawable/quantity_ic"
+                android:id="@+id/cart_pquantity"
+                android:fontFamily="@font/poppins_light"
+                android:textColor="#000000"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/cart_total_price"
+                    android:drawableLeft="@drawable/total_ic"
+
+                    android:textSize="10dp"
+                    android:fontFamily="@font/poppins_light"
+                    android:text="Total price"
+                    android:textColor="#000" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

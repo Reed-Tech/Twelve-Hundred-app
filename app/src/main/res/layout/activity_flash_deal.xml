@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFDFD"
+    tools:context=".FlashDealActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/flash_tb"
+            android:layout_width="wrap_content"
+            android:layout_height="?attr/actionBarSize"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:layout_scrollFlags="scroll|enterAlways" />
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:outlineAmbientShadowColor="#000"
+                android:outlineSpotShadowColor="#000">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="130dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/bbckgrd1" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/poppins_light"
+                        android:gravity="center"
+                        android:text="Current Flash Sale Deals"
+                        android:textColor="#FFFFFF"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/ends_in"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_light"
+                        android:gravity="center"
+                        android:layout_marginTop="-8dp"
+                        android:text="ends in"
+                        android:textColor="#ffffff"
+                        android:textSize="25dp"
+                        android:textStyle="bold" />
+
+
+                    <cn.iwgang.countdownview.CountdownView
+                        android:id="@+id/cndv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:visibility="gone"
+                        app:isHideTimeBackground="true"
+                        app:isShowDay="true"
+                        app:isShowHour="true"
+                        app:isShowMillisecond="true"
+                        app:isShowMinute="true"
+                        app:isShowSecond="true"
+                        app:isTimeTextBold="true"
+                        app:suffixDay="D"
+                        app:suffixGravity="bottom"
+                        app:suffixHour="H"
+                        app:suffixMillisecond="MS"
+                        app:suffixMinute="M"
+                        app:suffixSecond="S"
+                        app:suffixTextColor="#ffffff"
+                        app:suffixTextSize="12sp"
+                        app:timeBgBorderRadius="20dp"
+                        app:timeBgColor="#ffffff"
+                        app:timeBgRadius="10dp"
+                        app:timeTextColor="#ffffff"
+                        app:timeTextSize="40sp"
+                         />
+
+                    <TextView
+                        android:id="@+id/countdown_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/poppins_bold"
+                        android:gravity="center_horizontal"
+                        android:text="10:00"
+                        android:textColor="#BDB8B8"
+                        android:textSize="35dp" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/flash_rv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

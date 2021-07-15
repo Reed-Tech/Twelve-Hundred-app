@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="?actionBarSize"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#000000"
+    android:id="@+id/searchtoolbar"
+    >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="12:00"
+        android:textColor="#ffffff"
+        android:textSize="36dp"
+        android:paddingRight="30dp"
+        android:textAlignment="center"
+        android:gravity="center_horizontal"
+        android:fontFamily="@font/bangers"
+        />
+
+
+</androidx.appcompat.widget.Toolbar>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="350dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="40dp"
+            android:layout_marginTop="30dp"
+            android:hint="Review">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/dia_revtext"
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:fontFamily="@font/poppins_light"
+                android:paddingLeft="10dp"
+                android:textSize="12dp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:id="@+id/post_rev"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginHorizontal="10dp"
+            android:fontFamily="@font/poppins_bold"
+            android:textSize="18dp"
+            android:layout_marginTop="15dp"
+            android:textColor="#000"
+            android:text="Post Review"
+            android:drawableRight="@drawable/next_nav_black"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:text="Close"
+        android:id="@+id/close_man"
+        android:layout_marginBottom="5dp"
+        android:drawablePadding="5dp"
+        android:drawableLeft="@drawable/dia_close"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/segoeui"
+        android:textSize="12dp"
+        android:layout_alignParentBottom="true"
+        />
+
+</RelativeLayout>

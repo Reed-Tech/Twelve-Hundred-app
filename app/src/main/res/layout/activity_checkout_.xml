@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CartActivity">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/checkout_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#000000"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:layout_scrollFlags="scroll|enterAlways">
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="?attr/actionBarSize"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/ic_shopping_cart" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/poppins_bold"
+            android:text="Review Order"
+            android:textColor="#000"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="110dp"
+        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_marginTop="8dp"
+                app:cardCornerRadius="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:fontFamily="@font/poppins_bold"
+                        android:text="Paying with"
+                        android:textColor="#000"
+                        android:textSize="14dp"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginHorizontal="2dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/check_background"
+                        android:drawableTop="@drawable/ic_creditt_card"
+                        android:fontFamily="@font/poppins_light"
+                        android:padding="5dp"
+                        android:text="Credit card" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginHorizontal="20dp"
+                        android:layout_marginTop="15dp"
+                        android:background="#000" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="8dp"
+                        android:layout_marginTop="25dp"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:fontFamily="@font/poppins_light"
+                            android:text="Subtotal"
+                            android:textColor="#000"
+                            android:textSize="14dp" />
+
+                        <TextView
+                            android:id="@+id/subtotal_value"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:fontFamily="@font/poppins_light"
+                            android:text="Subtotal"
+                            android:textSize="14dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="8dp"
+                        android:layout_marginTop="15dp"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:fontFamily="@font/poppins_light"
+                            android:text="Shipping fee"
+                            android:textColor="#000"
+                            android:textSize="14dp" />
+
+                        <TextView
+                            android:id="@+id/shipping_value"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:fontFamily="@font/poppins_light"
+                            android:text="Shipping fee"
+                            android:textSize="14dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="8dp"
+                        android:layout_marginTop="15dp"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:fontFamily="@font/poppins_bold"
+                            android:text="Order Total"
+                            android:textColor="#000000"
+                            android:textSize="18dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/ordertotal_value"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:fontFamily="@font/poppins_bold"
+                            android:text="NGN"
+                            android:textColor="#000000"
+                            android:textSize="18dp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="20dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppins_light"
+                            android:text="By placing this order, you agree to"
+                            android:textSize="10dp" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/poppins_light"
+                                android:text=" 12:00's terms"
+                                android:textColor="#000"
+                                android:textSize="10dp" />
+
+                            <View
+                                android:layout_width="60dp"
+                                android:layout_height="0.5dp"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_marginLeft="3dp"
+                                android:background="#000"
+                                android:scrollbarSize="10dp" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:layout_marginHorizontal="20dp"
+                        android:layout_marginTop="20dp"
+                        android:background="#e7e7e7" />
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/promo_code"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_marginHorizontal="5dp"
+                            android:background="@drawable/check_background"
+                            android:fontFamily="@font/poppins_light"
+                            android:hint="Promo code"
+                            android:paddingLeft="10dp" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/pay_out_btn"
+                        android:fontFamily="@font/poppins_light"
+                        android:text="Apply"
+                        android:textColor="#fff"
+                        android:textSize="15dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="10dp"
+                        android:fontFamily="@font/poppins_light"
+                        android:text="Terms and conditions apply"
+                        android:textSize="10dp" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/btm_navbar"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:layout_alignParentBottom="true"
+        android:background="#fff"
+        app:itemIconTint="#fff"
+        app:itemTextColor="#fff">
+
+        <Button
+            android:id="@+id/paynow_btn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:background="@drawable/pay_out_btn"
+            android:fontFamily="@font/poppins_light"
+            android:text="Pay now"
+            android:textColor="#fff"
+            android:textStyle="bold" />
+
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+
+</RelativeLayout>

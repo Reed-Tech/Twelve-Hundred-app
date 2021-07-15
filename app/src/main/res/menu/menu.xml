@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/drawerhome"
+            android:icon="@drawable/homeicon"
+            android:title="Browse"/>
+        <item
+            android:id="@+id/drawersearch"
+            android:icon="@drawable/headersearchicon"
+            android:title="Search"
+            app:showAsAction="always"
+            />
+        <item
+            android:id="@+id/drawercart"
+            android:icon="@drawable/ic_shopping_cart"
+            android:title="Cart"/>
+        <item
+            android:id="@+id/drawerprofile"
+            android:icon="@drawable/profileicon"
+            android:title="Profile"/>
+        <item
+            android:id="@+id/drawerhistory"
+            android:icon="@drawable/historyicon"
+            android:title="History"/>
+        <item
+            android:id="@+id/drawercsupport"
+            android:icon="@drawable/csupporticon"
+            android:title="Customer Support"/>
+        <item
+            android:id="@+id/drawersettings"
+            android:icon="@drawable/settingsicon"
+            android:title="Settings"/>
+        <item
+            android:id="@+id/drawerlogout"
+            android:icon="@drawable/logoutic"
+            android:title="Log Out"/>
+
+    </group>
+</menu>
+

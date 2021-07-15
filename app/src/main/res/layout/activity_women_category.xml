@@ -1,0 +1,575 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".menCategory">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/myytoolbar4"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#000000"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <TextView
+        android:layout_width="77dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="1dp"
+        android:fontFamily="@font/bangers_regular"
+        android:text="12:00"
+        android:textColor="#ffffff"
+        android:textSize="36dp" />
+
+    <TextView
+        android:id="@+id/anptext4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/myytoolbar4"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/segoeui"
+        android:text="Add New Product"
+        android:textColor="#000000"
+        android:textSize="40dp"
+        android:textStyle="bold" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/anptext4">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/anptext4">
+
+            <TextView
+                android:id="@+id/clothingtxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/segoeui"
+                android:text="Clothing"
+                android:textColor="#000"
+                android:textSize="30dp" />
+
+            <LinearLayout
+                android:id="@+id/ll1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/clothingtxt"
+                android:layout_marginHorizontal="15dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <LinearLayout
+                    android:id="@+id/womenlin1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/faccesories"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/faccesories" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="fill_horizontal"
+                        android:text="Accessories"
+                        android:textColor="#000"
+                        android:textSize="12dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/womenlin2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/factivewear"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/ic_activewear" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="fill_horizontal"
+                        android:text="Activewear"
+                        android:textColor="#000"
+                        android:textSize="12dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:id="@+id/womenlin3"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/fcoords"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/clothes" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="fill_horizontal"
+                        android:text="Co-ords"
+                        android:textColor="#000"
+                        android:textSize="12dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/womenlin4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/fswaetshirts"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/sweats" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="fill_horizontal"
+                        android:text="Sweatshirts"
+                        android:textColor="#000"
+                        android:textSize="12dp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ll1"
+                android:layout_marginHorizontal="15dp"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <LinearLayout
+                    android:id="@+id/womenlin5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/fjackets"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/jackets" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="fill_horizontal"
+                        android:text="Jackets"
+                        android:textColor="#000"
+                        android:textSize="12dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/womenlin6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/fjeans"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/jeans" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="fill_horizontal"
+                        android:text="   Jeans"
+                        android:textColor="#000"
+                        android:textSize="12dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/womenlin7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/fjoggers"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/joggers" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="fill_horizontal"
+                        android:text="Joggers"
+                        android:textColor="#000"
+                        android:textSize="12dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/womenlin8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/fdress"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/fdress" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="fill_horizontal"
+                        android:text="Dresses"
+                        android:textColor="#000"
+                        android:textSize="12dp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ll2"
+                android:layout_marginHorizontal="15dp"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <LinearLayout
+                    android:id="@+id/womenlin9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/fjumpsuits"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/fjumpsuit" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="fill_horizontal"
+                        android:text="Jumpsuits"
+                        android:textColor="#000"
+                        android:textSize="12dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/womenlin10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/fshorts"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/shorts" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="fill_horizontal"
+                        android:text="   Shorts"
+                        android:textColor="#000"
+                        android:textSize="12dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/womenlin11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/fshirts"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/shirts" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="fill_horizontal"
+                        android:text="   Shirts"
+                        android:textColor="#000"
+                        android:textSize="12dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/womenlin12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/fkimonos"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/fkimonos" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="fill_horizontal"
+                        android:text="Kimonos"
+                        android:textColor="#000"
+                        android:textSize="12dp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ll3"
+                android:layout_marginHorizontal="15dp"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <LinearLayout
+                    android:id="@+id/womenlin13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/flingeries"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/flingerie" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="fill_horizontal"
+                        android:text="Lingeries"
+                        android:textColor="#000"
+                        android:textSize="12dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/womenlin14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/funderwear"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/underwear" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="fill_horizontal"
+                        android:text="Underwear"
+                        android:textColor="#000"
+                        android:textSize="12dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/womenlin15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/ftracksuits"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/track" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="fill_horizontal"
+                        android:text="Tracksuits"
+                        android:textColor="#000"
+                        android:textSize="12dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/womenlin16"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/fskirts"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/fskirts" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="fill_horizontal"
+                        android:text="   Skirts"
+                        android:textColor="#000"
+                        android:textSize="12dp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/shoestxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ll4"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/segoeui"
+                android:text="Shoes"
+                android:textColor="#000"
+                android:textSize="30dp" />
+
+            <LinearLayout
+                android:id="@+id/ll5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/shoestxt"
+                android:layout_marginHorizontal="15dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <LinearLayout
+                    android:id="@+id/womenlin17"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/fboots"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/fboots" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="fill_horizontal"
+                        android:text="Boots"
+                        android:textColor="#000"
+                        android:textSize="12dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/womenlin18"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/fheels"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/fheels" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="fill_horizontal"
+                        android:text="    Heels"
+                        android:textColor="#000"
+                        android:textSize="12dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/womenlin19"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/fsansals"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/fsandals" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="fill_horizontal"
+                        android:text="Sandals"
+                        android:textColor="#000"
+                        android:textSize="12dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/womenlin20"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/fsneakers"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/sneakers" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="fill_horizontal"
+                        android:text="Sneakers"
+                        android:textColor="#000"
+                        android:textSize="12dp" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>
+

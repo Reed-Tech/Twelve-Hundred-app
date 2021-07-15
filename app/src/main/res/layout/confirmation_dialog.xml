@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="350dp"
+        android:layout_height="300dp"
+        android:layout_gravity="center_horizontal"
+        app:cardCornerRadius="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/psg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"
+                android:fontFamily="@font/poppins_semibold"
+                android:gravity="center"
+                android:text="Are You Sure ?"
+                android:textColor="#000000"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <Button
+                    android:id="@+id/diayes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/poppins_bold"
+                    android:text="YES"
+                    android:textColor="#fff"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/diano"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/poppins_bold"
+                    android:text="NO"
+                    android:textColor="#fff"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginTop="20dp"
+                android:visibility="gone"
+                android:id="@+id/lll1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/segoeui"
+                    android:layout_marginHorizontal="10dp"
+                    android:text="Please wait..."
+                    android:textSize="12dp"
+                    android:id="@+id/pw_text"
+                    android:textColor="#000000"/>
+
+                <ProgressBar
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:fontFamily="@font/segoeui"
+                    android:id="@+id/pbar"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:text="Close"
+            android:id="@+id/close_cond"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="15dp"
+            android:layout_marginHorizontal="150dp"
+            android:drawableLeft="@drawable/dia_close"
+            android:gravity="center"
+            android:fontFamily="@font/segoeui"
+            android:textSize="12dp"
+            android:layout_marginTop="100dp"
+            />
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

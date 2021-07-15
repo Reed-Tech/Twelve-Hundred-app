@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_marginHorizontal="10dp"
+    android:weightSum="2">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:text="Store Name"
+        android:textStyle="bold"
+        android:id="@+id/text_id"
+        android:textSize="20dp"
+        android:layout_weight="2"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:id="@+id/icon_id"
+        android:src="@drawable/down_drop"
+        />
+
+</LinearLayout>
